@@ -149,11 +149,7 @@ export default function Home() {
                 Site Debugging
               </button>
 
-              <button 
-                onClick={() => setActiveModal('custom')}
-                className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
-                Custom Builds
-              </button>
+              
               <button 
   onClick={() => setActiveModal('custom')}
                 className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer inline-block">
@@ -616,7 +612,7 @@ export default function Home() {
                 <ul className="space-y-2 mb-6">
                   {service.bullets.map((bullet, i) => (
                     <li key={i} className="text-[#9e9ea9] text-sm flex items-start gap-2">
-                      <span className="text-green-400 mt-1">✓</span>
+                      <span className="text-green-400">✓</span>
                       {bullet}
                     </li>
                   ))}
