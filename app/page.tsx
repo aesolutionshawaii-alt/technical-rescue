@@ -1,7 +1,89 @@
 'use client';
 import { ShoppingBagIcon, LightningIcon, GlobeIcon, EnvelopeIcon, ChartIcon, GearIcon, CheckmarkIcon } from './app/components/Icons';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';import { useState } from 'react';
+
+const services = [
+  {
+    id: 'shopify',
+    title: 'Shopify',
+    bullets: [
+      'Theme customization & section rebuilds',
+      'Product setup, variants, collections',
+      'App installs + troubleshooting',
+      'Navigation fixes & layout improvements',
+      'Shopify → DNS → email integrations'
+    ],
+    turnaround: '1–3 days',
+    price: '$300–$1,200'
+  },
+  {
+    id: 'dns',
+    title: 'DNS & Email Setup',
+    bullets: [
+      'Domain setup & propagation',
+      'Google Workspace / Microsoft 365 setup',
+      'MX, SPF, DKIM, DMARC configuration',
+      'Fixing email deliverability issues',
+      'Resolving domain misconfigurations'
+    ],
+    turnaround: 'Same day (1–12 hours)',
+    price: '$200–$600'
+  },
+  {
+    id: 'seo',
+    title: 'SEO Fixes',
+    bullets: [
+      'Indexing conflicts & sitemap cleanup',
+      'Broken links + redirect fixes',
+      'Google Search Console errors',
+      'Page title + meta cleanup',
+      'Basic on-page optimization'
+    ],
+    turnaround: '24–48 hours',
+    price: '$300–$1,000'
+  },
+  {
+    id: 'email',
+    title: 'Email Marketing',
+    bullets: [
+      'Mailchimp setup + audience tagging',
+      'Automated flows (welcome, follow-up, VIP)',
+      'Popup forms + embed fixes',
+      'Deliverability improvements',
+      'Template customization'
+    ],
+    turnaround: '1–3 days',
+    price: '$300–$1,200'
+  },
+  {
+    id: 'debugging',
+    title: 'Site Debugging',
+    bullets: [
+      'Broken layouts / mobile fixes',
+      '404s, routing, embed bugs',
+      'Slow loading / image optimization',
+      'Config issues in Squarespace/Shopify',
+      'Fixing "no one else can figure this out" tech problems'
+    ],
+    turnaround: 'Same day–2 days',
+    price: '$250–$1,000'
+  },
+  {
+    id: 'custom',
+    title: 'Custom Builds',
+    bullets: [
+      'Landing pages (v0 / Next.js / Cursor)',
+      'Custom calculators, forms, or automations',
+      'API integrations (Stripe, Mailchimp, etc.)',
+      'Multi-page site builds from scratch',
+      'Fully bespoke rescue projects'
+    ],
+    turnaround: '3–14 days',
+    price: '$1,500–$8,000+'
+  }
+];
 export default function Home() {
+  const [activeModal, setActiveModal] = useState<string | null>(null);
   return (
     <main className="bg-black min-h-screen">
       <header className="flex justify-between items-center px-20 py-6 bg-[#09090b]">
@@ -37,35 +119,46 @@ export default function Home() {
           </p>
 
           <div className="flex flex-wrap gap-6 mb-6">
-          <a href="#shopify" 
-   className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer inline-block">
-  Shopify
-</a>
+          <button 
+                onClick={() => setActiveModal('shopify')}
+                className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+                Shopify
+              </button>
 
-<a href="#dns-email" 
-   className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer inline-block">
-  DNS & Email Setup
-</a>
+              <button 
+                onClick={() => setActiveModal('dns')}
+                className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+                DNS & Email Setup
+              </button>
 
-<a href="#seo" 
-   className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer inline-block">
-  SEO Fixes
-</a>
+              <button 
+                onClick={() => setActiveModal('seo')}
+                className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+                SEO Fixes
+              </button>
 
-<a href="#email-marketing" 
-   className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer inline-block">
-  Email Marketing
-</a>
+              <button 
+                onClick={() => setActiveModal('email')}
+                className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+                Email Marketing
+              </button>
 
-<a href="#site-debugging" 
-   className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer inline-block">
-  Site Debugging
-</a>
+              <button 
+                onClick={() => setActiveModal('debugging')}
+                className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+                Site Debugging
+              </button>
 
-<a href="#custom-builds" 
-   className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer inline-block">
-  Custom Builds
-</a>
+              <button 
+                onClick={() => setActiveModal('custom')}
+                className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+                Custom Builds
+              </button>
+              <button 
+  onClick={() => setActiveModal('custom')}
+                className="bg-[#18181B] border border-gray-800 px-4 py-2 text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer inline-block">
+                Custom Builds
+              </button>
           </div>
 
           <div className="flex gap-4">
@@ -501,6 +594,57 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      {/* Modal */}
+      {activeModal && (
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+          onClick={() => setActiveModal(null)}
+        >
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            className="bg-[#18181b] border border-[#26262a] rounded-lg max-w-lg w-full p-8 relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {services.filter(s => s.id === activeModal).map(service => (
+              <div key={service.id}>
+                <h3 className="text-white text-2xl font-normal mb-4">{service.title}</h3>
+                <ul className="space-y-2 mb-6">
+                  {service.bullets.map((bullet, i) => (
+                    <li key={i} className="text-[#9e9ea9] text-sm flex items-start gap-2">
+                      <span className="text-green-400 mt-1">✓</span>
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex justify-between text-sm mb-6">
+                  <div>
+                    <p className="text-[#9e9ea9]">Turnaround</p>
+                    <p className="text-white">{service.turnaround}</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-[#9e9ea9]">Price Range</p>
+                    <p className="text-white">{service.price}</p>
+                  </div>
+                </div>
+                <button className="w-full bg-white text-black py-3 font-normal hover:bg-gray-100 transition-colors">
+                  Request Fix
+                </button>
+              </div>
+            ))}
+            <button 
+              onClick={() => setActiveModal(null)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-white text-xl"
+            >
+              ✕
+            </button>
+          </motion.div>
+        </motion.div>
+      )}
     </main>
   );
 }
