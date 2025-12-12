@@ -103,7 +103,7 @@ export default function Home() {
           <a href="#work" className="text-[#9e9ea9] hover:text-white text-[15px]">Case Studies</a>
           <a href="#about" className="text-[#9e9ea9] hover:text-white text-[15px]">About</a>
           <a href="#contact" className="text-[#9e9ea9] hover:text-white text-[15px]">Contact</a>
-          <button className="bg-white text-[#09090b] px-9 py-[15px] text-[15px] font-normal hover:bg-gray-100">
+          <button className="bg-white text-[#09090b] px-9 py-[15px] text-[15px] font-normal hover:bg-gray-100 rounded-full">
             Book a call
           </button>
         </nav>
@@ -137,7 +137,7 @@ export default function Home() {
             <a href="#work" className="text-[#9e9ea9] hover:text-white text-[15px] py-2" onClick={() => setMobileMenuOpen(false)}>Case Studies</a>
             <a href="#about" className="text-[#9e9ea9] hover:text-white text-[15px] py-2" onClick={() => setMobileMenuOpen(false)}>About</a>
             <a href="#contact" className="text-[#9e9ea9] hover:text-white text-[15px] py-2" onClick={() => setMobileMenuOpen(false)}>Contact</a>
-            <button className="bg-white text-[#09090b] px-6 py-3 text-[15px] font-normal hover:bg-gray-100 mt-2">
+            <button className="bg-white text-[#09090b] px-6 py-3 text-[15px] font-normal hover:bg-gray-100 mt-2 rounded-full">
               Book a call
             </button>
           </nav>
@@ -163,46 +163,46 @@ export default function Home() {
           <div className="flex flex-wrap gap-3 md:gap-6 mb-6">
             <button 
               onClick={() => setActiveModal('shopify')}
-              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer rounded-full">
               Shopify
             </button>
 
             <button 
               onClick={() => setActiveModal('dns')}
-              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer rounded-full">
               DNS & Email Setup
             </button>
 
             <button 
               onClick={() => setActiveModal('seo')}
-              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer rounded-full">
               SEO Fixes
             </button>
 
             <button 
               onClick={() => setActiveModal('email')}
-              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer rounded-full">
               Email Marketing
             </button>
 
             <button 
               onClick={() => setActiveModal('debugging')}
-              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer rounded-full">
               Site Debugging
             </button>
 
             <button 
               onClick={() => setActiveModal('custom')}
-              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer">
+              className="bg-[#18181B] border border-gray-800 px-3 md:px-4 py-2 text-xs md:text-sm text-gray-300 transition-all duration-200 hover:scale-110 hover:bg-gray-800 hover:text-white cursor-pointer rounded-full">
               Custom Builds
             </button>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-            <button className="bg-white text-[#09090b] px-6 md:px-9 py-3 md:py-[15px] text-[14px] md:text-[15px] font-normal tracking-[-0.61px] hover:bg-gray-100">
+            <button className="bg-white text-[#09090b] px-6 md:px-9 py-3 md:py-[15px] text-[14px] md:text-[15px] font-normal tracking-[-0.61px] hover:bg-gray-100 rounded-full">
               View services
             </button>
-            <button className="border border-[#3e3e46] text-white px-6 md:px-9 py-3 md:py-4 text-[14px] md:text-[15px] font-normal tracking-[-0.61px] hover:bg-[#18181b]">
+            <button className="border border-[#3e3e46] text-white px-6 md:px-9 py-3 md:py-4 text-[14px] md:text-[15px] font-normal tracking-[-0.61px] hover:bg-[#18181b] rounded-full">
               Get help now
             </button>
           </div>
@@ -226,7 +226,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px]"
+              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px] rounded-2xl"
             >
               <div className="w-[36px] h-[36px] md:w-[44px] md:h-[44px] mb-6 md:mb-8">
                 <ShoppingBagIcon />
@@ -245,7 +245,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px]"
+              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px] rounded-2xl"
             >
               <div className="w-[36px] h-[36px] md:w-[44px] md:h-[44px] mb-6 md:mb-8">
                 <LightningIcon />
@@ -264,7 +264,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px]"
+              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px] rounded-2xl"
             >
               <div className="w-[36px] h-[36px] md:w-[44px] md:h-[44px] mb-6 md:mb-8">
                 <GlobeIcon />
@@ -283,7 +283,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px]"
+              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px] rounded-2xl"
             >
               <div className="w-[36px] h-[36px] md:w-[44px] md:h-[44px] mb-6 md:mb-8">
                 <EnvelopeIcon />
@@ -302,7 +302,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px]"
+              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px] rounded-2xl"
             >
               <div className="w-[36px] h-[36px] md:w-[44px] md:h-[44px] mb-6 md:mb-8">
                 <ChartIcon />
@@ -321,7 +321,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px]"
+              className="bg-[#18181B] border border-[#26262a] p-6 md:p-[41px] rounded-2xl"
             >
               <div className="w-[36px] h-[36px] md:w-[44px] md:h-[44px] mb-6 md:mb-8">
                 <GearIcon />
@@ -336,12 +336,12 @@ export default function Home() {
           </div>
 
           {/* Bottom CTA */}
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-[#18181b] border border-[#26262a] p-6 md:p-8 mt-6 md:mt-8">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-[#18181b] border border-[#26262a] p-6 md:p-8 mt-6 md:mt-8 rounded-2xl">
             <div>
               <h3 className="text-white text-[18px] md:text-[20px] font-normal mb-2">Not sure what you need?</h3>
               <p className="text-[#9e9ea9] text-[14px] md:text-[15px]">Schedule a free 15-minute consultation to discuss your technical challenges.</p>
             </div>
-            <button className="bg-white text-[#09090b] px-6 md:px-9 py-3 md:py-[15px] text-[14px] md:text-[15px] font-normal hover:bg-gray-100 whitespace-nowrap w-full sm:w-auto">
+            <button className="bg-white text-[#09090b] px-6 md:px-9 py-3 md:py-[15px] text-[14px] md:text-[15px] font-normal hover:bg-gray-100 whitespace-nowrap w-full sm:w-auto rounded-full">
               Book a call
             </button>
           </div>
@@ -365,7 +365,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-[#18181b] border border-[#26262a] overflow-hidden">
+              className="bg-[#18181b] border border-[#26262a] overflow-hidden rounded-2xl">
               <div className="h-[180px] md:h-[240px] bg-gray-800">
                 <img src="/static/img/imagewithfallback.svg" alt="" className="w-full h-full object-cover" />
               </div>
@@ -397,7 +397,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-[#18181b] border border-[#26262a] overflow-hidden">
+              className="bg-[#18181b] border border-[#26262a] overflow-hidden rounded-2xl">
               <div className="h-[180px] md:h-[240px] bg-gray-800">
                 <img src="/static/img/imagewithfallback-1.svg" alt="" className="w-full h-full object-cover" />
               </div>
@@ -429,7 +429,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="bg-[#18181b] border border-[#26262a] overflow-hidden">
+              className="bg-[#18181b] border border-[#26262a] overflow-hidden rounded-2xl">
               <div className="h-[180px] md:h-[240px] bg-gray-800">
                 <img src="/static/img/imagewithfallback-2.svg" alt="" className="w-full h-full object-cover" />
               </div>
@@ -546,28 +546,28 @@ export default function Home() {
               <div className="mt-10 md:mt-12">
                 <h4 className="text-white text-[16px] md:text-[18px] font-normal mb-5 md:mb-6">Tools & Platforms</h4>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6">
-                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46]">
+                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46] rounded-xl">
                     <img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify" className="h-6 md:h-8 opacity-60 hover:opacity-100" />
                   </div>
-                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46]">
+                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46] rounded-xl">
                     <img src="https://cdn.simpleicons.org/googletagmanager/246FDB" alt="Google Tag Manager" className="h-6 md:h-8 opacity-60 hover:opacity-100" />
                   </div>
-                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46]">
+                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46] rounded-xl">
                     <img src="https://cdn.simpleicons.org/mailchimp/FFE01B" alt="Mailchimp" className="h-6 md:h-8 opacity-60 hover:opacity-100" />
                   </div>
-                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46]">
+                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46] rounded-xl">
                     <img src="https://cdn.simpleicons.org/cloudflare/F38020" alt="Cloudflare" className="h-6 md:h-8 opacity-60 hover:opacity-100" />
                   </div>
-                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46]">
+                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46] rounded-xl">
                     <img src="https://cdn.simpleicons.org/stripe/635BFF" alt="Stripe" className="h-6 md:h-8 opacity-60 hover:opacity-100" />
                   </div>
-                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46]">
+                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46] rounded-xl">
                     <img src="https://cdn.simpleicons.org/googlesearchconsole/458CF5" alt="Google Search Console" className="h-6 md:h-8 opacity-60 hover:opacity-100" />
                   </div>
-                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46]">
+                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46] rounded-xl">
                     <img src="https://cdn.simpleicons.org/zapier/FF4A00" alt="Zapier" className="h-6 md:h-8 opacity-60 hover:opacity-100" />
                   </div>
-                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46]">
+                  <div className="bg-[#18181b] border border-[#26262a] p-4 md:p-6 flex items-center justify-center h-16 md:h-24 grayscale hover:grayscale-0 transition-all duration-300 hover:border-[#3e3e46] rounded-xl">
                     <img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt="Google Analytics" className="h-6 md:h-8 opacity-60 hover:opacity-100" />
                   </div>
                 </div>
@@ -577,12 +577,12 @@ export default function Home() {
             {/* Right Column - Photo & Status */}
             <div className="space-y-6 md:space-y-8 order-1 lg:order-2">
               {/* Photo */}
-              <div className="w-full aspect-[4/5] sm:aspect-[4/4] lg:aspect-[4/5] bg-[#18181b] border border-[#26262a] overflow-hidden">
+              <div className="w-full aspect-[4/5] sm:aspect-[4/4] lg:aspect-[4/5] bg-[#18181b] border border-[#26262a] overflow-hidden rounded-2xl">
                 <img src="/josh-photo.jpg" alt="Josh Shuman" className="w-full h-full object-cover" />
               </div>
 
               {/* Availability Card */}
-              <div className="bg-[#18181b] border border-[#26262a] p-6 md:p-8">
+              <div className="bg-[#18181b] border border-[#26262a] p-6 md:p-8 rounded-2xl">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="w-3 h-3 bg-[#00c950] rounded-full"></span>
                   <p className="text-white text-[16px] md:text-[18px] font-normal">Available for new projects</p>
@@ -607,7 +607,7 @@ export default function Home() {
           </p>
           <a 
             href="mailto:josh@highseasmedia.com" 
-            className="inline-block bg-white text-[#09090b] px-6 md:px-9 py-3 md:py-[15px] text-[14px] md:text-[15px] font-normal hover:bg-gray-100">
+            className="inline-block bg-white text-[#09090b] px-6 md:px-9 py-3 md:py-[15px] text-[14px] md:text-[15px] font-normal hover:bg-gray-100 rounded-full">
             Send an email
           </a>
         </div>
@@ -637,7 +637,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="bg-[#18181b] border border-[#26262a] rounded-lg max-w-lg w-full p-6 md:p-8 relative max-h-[90vh] overflow-y-auto"
+            className="bg-[#18181b] border border-[#26262a] rounded-2xl max-w-lg w-full p-6 md:p-8 relative max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {services.filter(s => s.id === activeModal).map(service => (
@@ -661,7 +661,7 @@ export default function Home() {
                     <p className="text-white">{service.price}</p>
                   </div>
                 </div>
-                <button className="w-full bg-white text-black py-3 font-normal hover:bg-gray-100 transition-colors text-[14px] md:text-base">
+                <button className="w-full bg-white text-black py-3 font-normal hover:bg-gray-100 transition-colors text-[14px] md:text-base rounded-full">
                   Request Fix
                 </button>
               </div>
