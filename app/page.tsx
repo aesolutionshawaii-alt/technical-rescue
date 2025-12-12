@@ -89,7 +89,7 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   return (
-    <main className="bg-black min-h-screen">
+    <main className="bg-black min-h-screen scroll-smooth">
       {/* Header */}
       <header className="flex justify-between items-center px-6 md:px-20 py-4 md:py-6 bg-[#09090b]">
         <div className="text-white text-[14px] md:text-[15px]">
@@ -103,9 +103,9 @@ export default function Home() {
           <a href="#work" className="text-[#9e9ea9] hover:text-white text-[15px]">Case Studies</a>
           <a href="#about" className="text-[#9e9ea9] hover:text-white text-[15px]">About</a>
           <a href="#contact" className="text-[#9e9ea9] hover:text-white text-[15px]">Contact</a>
-          <button className="bg-white text-[#09090b] px-9 py-[15px] text-[15px] font-normal hover:bg-gray-100 rounded-full">
+          <a href="https://calendly.com/aesolutionshawaii/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-[#09090b] px-9 py-[15px] text-[15px] font-normal hover:bg-gray-100 rounded-full">
             Book a call
-          </button>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -137,9 +137,9 @@ export default function Home() {
             <a href="#work" className="text-[#9e9ea9] hover:text-white text-[15px] py-2" onClick={() => setMobileMenuOpen(false)}>Case Studies</a>
             <a href="#about" className="text-[#9e9ea9] hover:text-white text-[15px] py-2" onClick={() => setMobileMenuOpen(false)}>About</a>
             <a href="#contact" className="text-[#9e9ea9] hover:text-white text-[15px] py-2" onClick={() => setMobileMenuOpen(false)}>Contact</a>
-            <button className="bg-white text-[#09090b] px-6 py-3 text-[15px] font-normal hover:bg-gray-100 mt-2 rounded-full">
+            <a href="https://calendly.com/aesolutionshawaii/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-[#09090b] px-6 py-3 text-[15px] font-normal hover:bg-gray-100 mt-2 rounded-full text-center">
               Book a call
-            </button>
+            </a>
           </nav>
         </motion.div>
       )}
@@ -199,12 +199,12 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-            <button className="bg-white text-[#09090b] px-6 md:px-9 py-3 md:py-[15px] text-[14px] md:text-[15px] font-normal tracking-[-0.61px] hover:bg-gray-100 rounded-full">
+            <a href="#services" className="bg-white text-[#09090b] px-6 md:px-9 py-3 md:py-[15px] text-[14px] md:text-[15px] font-normal tracking-[-0.61px] hover:bg-gray-100 rounded-full text-center">
               View services
-            </button>
-            <button className="border border-[#3e3e46] text-white px-6 md:px-9 py-3 md:py-4 text-[14px] md:text-[15px] font-normal tracking-[-0.61px] hover:bg-[#18181b] rounded-full">
+            </a>
+            <a href="https://calendly.com/aesolutionshawaii/30min" target="_blank" rel="noopener noreferrer" className="border border-[#3e3e46] text-white px-6 md:px-9 py-3 md:py-4 text-[14px] md:text-[15px] font-normal tracking-[-0.61px] hover:bg-[#18181b] rounded-full text-center">
               Get help now
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -341,15 +341,15 @@ export default function Home() {
               <h3 className="text-white text-[18px] md:text-[20px] font-normal mb-2">Not sure what you need?</h3>
               <p className="text-[#9e9ea9] text-[14px] md:text-[15px]">Schedule a free 15-minute consultation to discuss your technical challenges.</p>
             </div>
-            <button className="bg-white text-[#09090b] px-6 md:px-9 py-3 md:py-[15px] text-[14px] md:text-[15px] font-normal hover:bg-gray-100 whitespace-nowrap w-full sm:w-auto rounded-full">
+            <a href="https://calendly.com/aesolutionshawaii/30min" target="_blank" rel="noopener noreferrer" className="bg-white text-[#09090b] px-6 md:px-9 py-3 md:py-[15px] text-[14px] md:text-[15px] font-normal hover:bg-gray-100 whitespace-nowrap w-full sm:w-auto rounded-full text-center">
               Book a call
-            </button>
+            </a>
           </div>
         </div>
       </section>
 
       {/* Recent Client Fixes Section */}
-      <section className="px-6 md:px-20 py-12 md:py-20 bg-black">
+      <section id="work" className="px-6 md:px-20 py-12 md:py-20 bg-black">
         <div className="max-w-[1259px]">
           <h2 className="text-white text-[32px] sm:text-[44px] md:text-[56px] lg:text-[72px] font-normal mb-4 md:mb-6 tracking-[-1px] md:tracking-[-1.32px] leading-[1.1] md:leading-[79.2px]">
             Recent client fixes
@@ -582,14 +582,32 @@ export default function Home() {
               </div>
 
               {/* Availability Card */}
-              <div className="bg-[#18181b] border border-[#26262a] p-6 md:p-8 rounded-2xl">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="w-3 h-3 bg-[#00c950] rounded-full"></span>
-                  <p className="text-white text-[16px] md:text-[18px] font-normal">Available for new projects</p>
+              <div className="relative group">
+                {/* Radial glow - renders cleaner than blur */}
+                <div className="absolute inset-0 -m-8 bg-[radial-gradient(ellipse_at_center,_rgba(0,201,80,0.15)_0%,_transparent_70%)] pointer-events-none"></div>
+                
+                {/* Card */}
+                <div className="relative bg-[#111113] border border-[#00c950]/40 p-6 md:p-8 rounded-2xl shadow-[0_0_30px_-5px_rgba(0,201,80,0.3)]">
+                  <div className="flex items-center gap-3 mb-3">
+                    {/* Pulsing dot */}
+                    <span className="relative flex h-3 w-3">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00c950] opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-[#00c950]"></span>
+                    </span>
+                    <p className="text-white text-[16px] md:text-[18px] font-normal">Available for new projects</p>
+                  </div>
+                  <p className="text-[#9e9ea9] text-[13px] md:text-[14px] leading-[20px] md:leading-[21px] mb-5">
+                    Typical response time: 24 hours or less
+                  </p>
+                  <a 
+                    href="https://calendly.com/aesolutionshawaii/30min" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="block w-full bg-gradient-to-r from-[#00c950] to-[#00b4d8] text-black py-3 font-medium hover:opacity-90 transition-opacity text-[14px] md:text-[15px] rounded-full text-center"
+                  >
+                    Book a call
+                  </a>
                 </div>
-                <p className="text-[#9e9ea9] text-[13px] md:text-[14px] leading-[20px] md:leading-[21px]">
-                  Typical response time: 24 hours or less
-                </p>
               </div>
             </div>
           </div>
@@ -661,9 +679,9 @@ export default function Home() {
                     <p className="text-white">{service.price}</p>
                   </div>
                 </div>
-                <button className="w-full bg-white text-black py-3 font-normal hover:bg-gray-100 transition-colors text-[14px] md:text-base rounded-full">
+                <a href="https://calendly.com/aesolutionshawaii/30min" target="_blank" rel="noopener noreferrer" className="block w-full bg-white text-black py-3 font-normal hover:bg-gray-100 transition-colors text-[14px] md:text-base rounded-full text-center">
                   Request Fix
-                </button>
+                </a>
               </div>
             ))}
             <button 
