@@ -1,0 +1,17 @@
+{
+  "name": "xero-reclassify",
+  "version": "1.0.0",
+  "description": "Tool to reclassify Xero bank transactions",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "auth": "node auth-server.js"
+  },
+  "dependencies": {
+    "xero-node": "^9.0.0",
+    "express": "^4.21.0",
+    "dotenv": "^16.4.5",
+    "open": "^10.1.0"
+  }
+}
