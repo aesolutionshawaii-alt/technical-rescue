@@ -8,7 +8,6 @@ FN:Josh Shuman
 ORG:AE Solutions Hawaii
 TEL;TYPE=CELL:+18088644315
 EMAIL:aesolutionshawaii@gmail.com
-URL:https://aesolutionshawaii.com
 NOTE:Web Development, SEO, Meta Ads, Email Marketing, Social Media, Shopify, AI Automation
 END:VCARD`;
 
@@ -130,15 +129,6 @@ END:VCARD`;
             <div>
               <span className="link-label">Email</span>
               <span className="link-value">aesolutionshawaii@gmail.com</span>
-            </div>
-          </a>
-          <a href="https://aesolutionshawaii.com" target="_blank" rel="noopener noreferrer" className="contact-link">
-            <div className="link-icon">
-              <svg viewBox="0 0 24 24"><path d="M2 12c0 3 2.5 6 6 7.5M22 12c0 3-2.5 6-6 7.5M2 12c0-3 2.5-6 6-7.5M22 12c0-3-2.5-6-6-7.5M2 12h4M18 12h4M8 4.5C9.5 6 11 9 11 12s-1.5 6-3 7.5M16 4.5c-1.5 1.5-3 4.5-3 7.5s1.5 6 3 7.5"/></svg>
-            </div>
-            <div>
-              <span className="link-label">Web</span>
-              <span className="link-value">aesolutionshawaii.com</span>
             </div>
           </a>
           <a href="https://instagram.com/high_seas_hawaii" target="_blank" rel="noopener noreferrer" className="contact-link">
