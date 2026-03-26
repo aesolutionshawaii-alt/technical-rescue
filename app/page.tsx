@@ -167,6 +167,17 @@ END:VCARD`;
         </button>
       </div>
 
+      <div className="qr-section">
+        <div className="section-label">Scan to Share</div>
+        <div className="qr-container">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://technical-rescue.vercel.app&bgcolor=FFFFFF&color=0a1628&margin=0"
+            alt="QR Code"
+            className="qr-code"
+          />
+        </div>
+      </div>
+
       <div className="footer">
         <span className="footer-tagline">Digital solutions, island style</span>
         <span className="hawaii-badge">Est. 2019</span>

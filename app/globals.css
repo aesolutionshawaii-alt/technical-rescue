@@ -358,3 +358,23 @@ body::after {
 @keyframes shimmer {
   to { left: 100%; }
 }
+
+.qr-section {
+  margin-top: 32px;
+  animation: fadeUp 0.9s 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.qr-code {
+  width: 120px;
+  height: 120px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+}
