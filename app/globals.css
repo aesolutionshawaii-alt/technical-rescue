@@ -56,6 +56,20 @@ body::after {
   animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+@media (min-width: 768px) {
+  .card {
+    max-width: 700px;
+    padding: 60px 48px 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 900px;
+    padding: 70px 60px 60px;
+  }
+}
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
@@ -93,6 +107,18 @@ body::after {
   color: var(--foam);
   letter-spacing: -0.02em;
   margin-bottom: 6px;
+}
+
+@media (min-width: 768px) {
+  .name {
+    font-size: 72px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .name {
+    font-size: 84px;
+  }
 }
 
 .name em {
@@ -133,6 +159,20 @@ body::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+  }
 }
 
 .service-item {
@@ -204,6 +244,19 @@ body::after {
   flex-direction: column;
   gap: 10px;
   margin-top: 14px;
+}
+
+@media (min-width: 768px) {
+  .contact-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .contact-link {
+    flex: 1 1 calc(50% - 6px);
+    min-width: 280px;
+  }
 }
 
 .contact-link {
